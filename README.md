@@ -21,3 +21,11 @@ Push this folder to a GitHub repository. In **Settings → Pages**, choose **Dep
 - `assets/downloads/`: print-ready HTML resources (use the browser's Print → Save as PDF)
 
 No build step or external JavaScript dependency is required.
+
+## Multilingual resource release
+
+`guides.html` is the central English resource hub and includes a two-group language chooser. It links to `guides-more-languages.html`, which contains complete Spanish, Mandarin, Hindi, Kannada, Marathi, and Bengali collections. Every language has four training modes: starter guides, 15 situation topics, 12 activity topics, and two pocket cards. Forty-two principal PDFs are stored under `assets/downloads/`.
+
+The source reviews are summarized in `EVIDENCE_NOTES.md`. `GUIDE_CONTENT_MAP.md` maps every resource and language.
+
+To regenerate the web resource pages, run `node tools/build_resources.mjs` with a current Node release. To regenerate PDFs, run `/opt/anaconda3/bin/python tools/build_pdfs.py` in the authoring environment.
