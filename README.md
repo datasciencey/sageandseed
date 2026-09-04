@@ -10,6 +10,8 @@ From this folder run `python3 -m http.server 8000`, then open `http://localhost:
 
 Push this folder to a GitHub repository. In **Settings → Pages**, choose **Deploy from a branch**, then select the main branch and `/ (root)`. All links are relative, so the site works in a repository subdirectory.
 
+The production custom domain is `sageandseed.org`, configured by the root `CNAME` file. The domain DNS must point to GitHub Pages before enabling **Enforce HTTPS**.
+
 ## Structure
 
 - Root HTML files: primary site pages
